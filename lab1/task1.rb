@@ -7,9 +7,7 @@ def word_stats(text)
     word.length
   end
 
-  unique_words = words.map do |word|
-    word.downcase
-  end.uniq.length
+  unique_words = words.map{|word| word.downcase}.uniq.length
 
   puts "#{count} слів, найдовше: #{longest_word}, унікальних: #{unique_words}"
 end
