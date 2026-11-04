@@ -150,7 +150,7 @@ class SudokuGame
             [1, 0, 0, 4],
             [0, 4, 1, 0],
             [2, 0, 4, 0],
-            [0, 1, 0, 2]
+            [0, 1, 0, 3]
           ]
 
         when 2
@@ -158,15 +158,15 @@ class SudokuGame
             [1, 0, 0, 4],
             [0, 4, 0, 0],
             [2, 0, 4, 0],
-            [0, 0, 0, 2]
+            [0, 0, 0, 3]
           ]
 
         else
           [
-            [0, 0, 3, 4],
+            [0, 0, 0, 4],
             [0, 4, 0, 0],
-            [2, 0, 4, 0],
-            [0, 0, 0, 2]
+            [2, 0, 0, 0],
+            [0, 0, 0, 3]
           ]
         end
 
@@ -203,7 +203,10 @@ class SudokuGame
         row = rand(9)
         col = rand(9)
 
-        @board[row][col] = 0
+        unless @board[row][col].zero?
+          @board[row][col] = 0
+          break
+        end
       end
 
     end
