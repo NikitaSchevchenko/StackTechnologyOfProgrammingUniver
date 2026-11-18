@@ -12,33 +12,5 @@
     "amount_in_kopecks": 300000,
     "category": "entertainment",
     "description": "ps5"
-  },
-  {
-    "id": 3,
-    "date": "2026-01-10",
-    "amount_in_kopecks": 15000,
-    "category": "food",
-    "description": "Продукти"
-  },
-  {
-    "id": 4,
-    "date": "2026-01-05",
-    "amount_in_kopecks": 5000,
-    "category": "transport",
-    "description": "Таксі"
-  },
-  {
-    "id": 5,
-    "date": "2026-01-15",
-    "amount_in_kopecks": 15000,
-    "category": "study",
-    "description": "Книга з Ruby"
-  },
-  {
-    "id": 6,
-    "date": "2026-02-01",
-    "amount_in_kopecks": 2500,
-    "category": "entertainment",
-    "description": "Кіно"
   }
 ]
